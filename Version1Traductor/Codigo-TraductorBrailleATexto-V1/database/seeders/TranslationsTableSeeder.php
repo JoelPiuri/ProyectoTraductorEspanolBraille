@@ -13,7 +13,7 @@ class TranslationsTableSeeder extends Seeder
         DB::table('translations')->truncate();
         $translations = [
 
-            //letras
+            // Minúsculas
             ['caracterEspanol' => 'a', 'braille' => '⠁'],
             ['caracterEspanol' => 'b', 'braille' => '⠃'],
             ['caracterEspanol' => 'c', 'braille' => '⠉'],
@@ -28,6 +28,7 @@ class TranslationsTableSeeder extends Seeder
             ['caracterEspanol' => 'l', 'braille' => '⠇'],
             ['caracterEspanol' => 'm', 'braille' => '⠍'],
             ['caracterEspanol' => 'n', 'braille' => '⠝'],
+            ['caracterEspanol' => 'ñ', 'braille' => '⠻'],
             ['caracterEspanol' => 'o', 'braille' => '⠕'],
             ['caracterEspanol' => 'p', 'braille' => '⠏'],
             ['caracterEspanol' => 'q', 'braille' => '⠟'],
@@ -40,25 +41,22 @@ class TranslationsTableSeeder extends Seeder
             ['caracterEspanol' => 'x', 'braille' => '⠭'],
             ['caracterEspanol' => 'y', 'braille' => '⠽'],
             ['caracterEspanol' => 'z', 'braille' => '⠵'],
-            ['caracterEspanol' => ' ', 'braille' => '  '],
-            // Números
-            ['caracterEspanol' => '1', 'braille' => '⠁'],
-            ['caracterEspanol' => '2', 'braille' => '⠃'],
-            ['caracterEspanol' => '3', 'braille' => '⠉'],
-            ['caracterEspanol' => '4', 'braille' => '⠙'],
-            ['caracterEspanol' => '5', 'braille' => '⠑'],
-            ['caracterEspanol' => '6', 'braille' => '⠋'],
-            ['caracterEspanol' => '7', 'braille' => '⠛'],
-            ['caracterEspanol' => '8', 'braille' => '⠓'],
-            ['caracterEspanol' => '9', 'braille' => '⠊'],
-            ['caracterEspanol' => '0', 'braille' => '⠚'],
-            // Símbolos
+            ['caracterEspanol' => 'á', 'braille' => '⠷'],
+            ['caracterEspanol' => 'é', 'braille' => '⠮'],
+            ['caracterEspanol' => 'í', 'braille' => '⠌'],
+            ['caracterEspanol' => 'ó', 'braille' => '⠬'],
+            ['caracterEspanol' => 'ú', 'braille' => '⠾'],
+            ['caracterEspanol' => 'ü', 'braille' => '⠳'],
+            ['caracterEspanol' => ' ', 'braille' => ' '],
+
+            // Signos de puntuación
             ['caracterEspanol' => '.', 'braille' => '⠲'],
             ['caracterEspanol' => ',', 'braille' => '⠂'],
             ['caracterEspanol' => ';', 'braille' => '⠆'],
             ['caracterEspanol' => ':', 'braille' => '⠒'],
-            ['caracterEspanol' => '!', 'braille' => '⠖'],
-            ['caracterEspanol' => '?', 'braille' => '⠦'],
+            ['caracterEspanol' => '¿', 'braille' => '⠢'],
+            ['caracterEspanol' => '¡', 'braille' => '⠖'],
+            ['caracterEspanol' => '"', 'braille' => '⠶'],
             ['caracterEspanol' => '(', 'braille' => '⠶'],
             ['caracterEspanol' => ')', 'braille' => '⠶'],
             ['caracterEspanol' => '-', 'braille' => '⠤'],
@@ -67,8 +65,6 @@ class TranslationsTableSeeder extends Seeder
             ['caracterEspanol' => '#', 'braille' => '⠼'],
             ['caracterEspanol' => '&', 'braille' => '⠯'],
             ['caracterEspanol' => '*', 'braille' => '⠡'],
-            ['caracterEspanol' => '"', 'braille' => '⠐⠦'],
-            ['caracterEspanol' => "'", 'braille' => '⠄'],
             ['caracterEspanol' => '=', 'braille' => '⠿'],
             ['caracterEspanol' => '+', 'braille' => '⠐⠖'],
             ['caracterEspanol' => '<', 'braille' => '⠐⠶'],
@@ -85,12 +81,25 @@ class TranslationsTableSeeder extends Seeder
             ['caracterEspanol' => '|', 'braille' => '⠸⠶'],
             ['caracterEspanol' => '~', 'braille' => '⠘⠹'],
             ['caracterEspanol' => '`', 'braille' => '⠐'],
-            //tildes
-            ['caracterEspanol' => 'á', 'braille' => '⠷'],
-            ['caracterEspanol' => 'é', 'braille' => '⠮'],
-            ['caracterEspanol' => 'í', 'braille' => '⠌'],
-            ['caracterEspanol' => 'ó', 'braille' => '⠬'],
-            ['caracterEspanol' => 'ú', 'braille' => '⠾'],
+
+            // Números
+            ['caracterEspanol' => '1', 'braille' => '⠁'],
+            ['caracterEspanol' => '2', 'braille' => '⠃'],
+            ['caracterEspanol' => '3', 'braille' => '⠉'],
+            ['caracterEspanol' => '4', 'braille' => '⠙'],
+            ['caracterEspanol' => '5', 'braille' => '⠑'],
+            ['caracterEspanol' => '6', 'braille' => '⠋'],
+            ['caracterEspanol' => '7', 'braille' => '⠛'],
+            ['caracterEspanol' => '8', 'braille' => '⠓'],
+            ['caracterEspanol' => '9', 'braille' => '⠊'],
+            ['caracterEspanol' => '0', 'braille' => '⠚'],
+
+            // Signos específicos de otras lenguas oficiales del Estado español
+            ['caracterEspanol' => 'à', 'braille' => '⠷'],
+            ['caracterEspanol' => 'è', 'braille' => '⠮'],
+            ['caracterEspanol' => 'ò', 'braille' => '⠬'],
+            ['caracterEspanol' => 'ï', 'braille' => '⠳'],
+            ['caracterEspanol' => 'ç', 'braille' => '⠯'],
             //tildes mayusculas
             ['caracterEspanol' => 'Á', 'braille' => '⠨⠷'],
             ['caracterEspanol' => 'É', 'braille' => '⠨⠮'],
