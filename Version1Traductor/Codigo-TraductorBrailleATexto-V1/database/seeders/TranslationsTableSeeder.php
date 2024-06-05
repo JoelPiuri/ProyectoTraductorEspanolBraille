@@ -12,7 +12,7 @@ class TranslationsTableSeeder extends Seeder
         // Vaciar la tabla antes de insertar nuevos datos
         DB::table('translations')->truncate();
         $translations = [
-            
+
             //letras
             ['caracterEspanol' => 'a', 'braille' => '⠁'],
             ['caracterEspanol' => 'b', 'braille' => '⠃'],
@@ -91,7 +91,13 @@ class TranslationsTableSeeder extends Seeder
             ['caracterEspanol' => 'í', 'braille' => '⠌'],
             ['caracterEspanol' => 'ó', 'braille' => '⠬'],
             ['caracterEspanol' => 'ú', 'braille' => '⠾'],
-            
+            //tildes mayusculas
+            ['caracterEspanol' => 'Á', 'braille' => '⠨⠷'],
+            ['caracterEspanol' => 'É', 'braille' => '⠨⠮'],
+            ['caracterEspanol' => 'Í', 'braille' => '⠨⠌'],
+            ['caracterEspanol' => 'Ó', 'braille' => '⠨⠬'],
+            ['caracterEspanol' => 'Ú', 'braille' => '⠨⠾'],
+
 
         ];
 
